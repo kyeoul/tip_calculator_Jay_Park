@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             public void onRatingChanged(RatingBar ratingBar, float value, boolean b) {
                 percent = value * 0.04;
 
-                if(!editText.getText().toString().equals("")){
+                if(!editText.getText().toString().equals("") && !editText.getText().toString().equals(".")){
                     cost = Double.parseDouble(editText.getText().toString());
                     tip = cost * percent;
                     total = cost + tip;
