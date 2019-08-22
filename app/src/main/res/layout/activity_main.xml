@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tip Calculator"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/editTextCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:hint="Total cost of bill"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/serviceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:textColor="#FFFFFF"
+        android:text="How was your service today?"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@id/serviceText"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewPercentLabel"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your percent is:"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/ratingBar"
+        android:layout_marginTop="70dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewTipLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textViewPercentLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:text="Your Tip:"
+        android:layout_marginTop="90dp"/>
+
+    <TextView
+        android:id="@+id/textViewTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textViewTipLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:text="Your Total:"/>
+
+    <TextView
+        android:id="@+id/textViewPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewPercentLabel"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Percent"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewTipLabel"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Tip"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/textViewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textViewTotalLabel"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Total"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"/>
+
+
+</RelativeLayout>
