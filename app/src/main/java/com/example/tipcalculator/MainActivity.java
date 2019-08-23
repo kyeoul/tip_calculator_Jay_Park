@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else{
                     Context context  = getApplicationContext();
-                    CharSequence string = "You should really type in a cost, not anything strange.(Type in a cost.)";
+                    CharSequence string = "You should really type in a cost, not anything strange(Type in a cost).";
                     Toast.makeText(context, string, Toast.LENGTH_SHORT).show();
                     percentText.setText("Mhm");
                     tipText.setText("I can definitely calculate your tips");
